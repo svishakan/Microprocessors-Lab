@@ -1,0 +1,6 @@
+#Files that are not required to be tracked here.
+*.obj
+*.bak
+*.exe
+*.err
+*.dsk
