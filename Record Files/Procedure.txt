@@ -1,0 +1,13 @@
+Procedure for executing a MASM Program:
+
+Assemble the file using	:	MASM <FILENAME>.ASM
+Link the file using	:	LINK <FILENAME>.OBJ
+Debug the file using	:	DEBUG <FILENAME>.EXE
+
+Options in Debugging:
+
+-u			: Unassemble the instructions
+-d mem_start:mem_end	: Memory dump
+-e mem_start:mem_end	: To change the values stored in memory
+-g			: Execute the instructions
+-q			: Quit the debugging

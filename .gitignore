@@ -4,3 +4,8 @@
 *.exe
 *.err
 *.dsk
+*.OBJ
+*.BAK
+*.EXE
+*.ERR
+*.DSK
