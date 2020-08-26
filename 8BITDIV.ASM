@@ -3,9 +3,9 @@
 assume cs:code,ds:data
 
 data segment
-	opr1    dw  0010H
-	opr2    db  08H
-	quot    db  00H
+    opr1    dw  0010H
+    opr2    db  08H
+    quot    db  00H
     rem     db  00H
 data ends
 
