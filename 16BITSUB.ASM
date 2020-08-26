@@ -22,6 +22,7 @@ start:  mov ax, data
         jnc here
         neg ax
         inc ch
+        
 here:   mov diff, ax
         mov sign, ch
         mov ah, 4ch
