@@ -3,10 +3,10 @@
 assume cs:code,ds:data
 
 data segment 
-	opr1	db	11h
-	opr2	db	99h
-	result	db	00H
-	carry	db	00H      
+		opr1	db	11h
+		opr2	db	99h
+		result	db	00H
+		carry	db	00H      
 data ends
 
 code segment
