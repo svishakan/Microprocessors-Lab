@@ -10,9 +10,7 @@ data segment
 data ends
 
 code segment
-
-        org 0100h
-
+	org 0100h
 start:  mov ax, data
         mov ds, ax
         mov ah, opr1
@@ -26,7 +24,5 @@ here:   mov diff, ah
         mov sign, ch
         mov ah, 4ch
         int 21h
-
-code ends
-
+	code ends
 end start
