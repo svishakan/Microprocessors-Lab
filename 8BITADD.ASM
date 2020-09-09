@@ -11,17 +11,21 @@ data ends
 
 code segment
 		org 0100h
-start:  mov ax,data
-        mov ds,ax
-        mov ah,opr1
-        mov bh,opr2
+		
+start:		mov ax,data
+		mov ds,ax
+		mov ah,opr1
+		mov bh,opr2
 		mov ch,00h
 		add ah,bh
 		jnc here
 		inc ch
-here:	mov result,ah
+		
+here:		mov result,ah
 		mov carry,ch
-        mov ah,4ch
-        int 21h
-		code ends
+		mov ah,4ch
+		int 21h
+		
+code ends
+
 end start
