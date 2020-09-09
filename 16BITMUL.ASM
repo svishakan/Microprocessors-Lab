@@ -3,10 +3,10 @@
 assume cs:code,ds:data
 
 data segment
-  opr1      dw  1000H
-  opr2      dw  1000H
-  product1  dw  0000H     
-  product2  dw  0000H
+	opr1      dw  1000H
+	opr2      dw  1000H
+	product1  dw  0000H     
+	product2  dw  0000H
 data ends
 
 code segment

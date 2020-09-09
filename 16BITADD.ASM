@@ -13,7 +13,7 @@ code segment
 
 		org 0100h
 
-start:  mov ax, data
+start:		mov ax, data
 		mov ds, ax
 		mov ax, opr1
  		mov bx, opr2
@@ -22,7 +22,7 @@ start:  mov ax, data
 		jnc here
 		inc ch
 
-here:	mov result, ax
+here:		mov result, ax
 		mov carry, ch
 		mov ah, 4ch
 		int 21h
