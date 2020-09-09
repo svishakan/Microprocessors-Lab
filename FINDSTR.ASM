@@ -17,7 +17,7 @@ code segment
 		
 		org 0100h
 
-start:	mov ax, data
+start:		mov ax, data
 		mov ds, ax
 		mov ax, extra
 		mov es, ax
@@ -33,7 +33,7 @@ start:	mov ax, data
 		mov ah, 4ch
 		int 21h
 		
-notfnd:	mov strloc, 0000h
+notfnd:		mov strloc, 0000h
 		mov ah, 4ch
 		int 21h
 

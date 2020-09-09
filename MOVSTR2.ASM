@@ -12,13 +12,13 @@ code segment
 		
 		org 0100h
 
-start:	mov ax, data
+start:		mov ax, data
 		mov ds, ax
 		mov si, offset str1 
 		mov di, offset str2 + 000Ah
 		mov cx, strlen
 
-looper:	mov bl, [si]
+looper:		mov bl, [si]
 		mov [di], bl
 		inc si
 		inc di
@@ -26,7 +26,7 @@ looper:	mov bl, [si]
 		jz break
 		jmp looper
 
-break:	mov ah, 4ch
+break:		mov ah, 4ch
 		int 21h
 
 code ends

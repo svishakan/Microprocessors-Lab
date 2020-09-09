@@ -16,7 +16,7 @@ code segment
 		
 		org 0100h
 
-start:	mov ax, data
+start:		mov ax, data
 		mov ds, ax
 		mov ax, extra
 		mov es, ax
