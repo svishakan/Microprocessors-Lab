@@ -10,7 +10,7 @@ data ends
 
 code segment
 
-		org 0100h
+	org 0100h
 
 start:	mov ax, data
 	mov ds, ax
