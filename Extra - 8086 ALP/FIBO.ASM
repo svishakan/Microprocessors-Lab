@@ -17,22 +17,22 @@ start:
 	mov ds, ax
 	mov sum, 00h
 	mov si, offset ans
-	mov al, 00h 	;Initialise Fibonacci Series
+	mov al, 00h 		;Initialise Fibonacci Series
 	mov bl, 01h
 	add num, 01h
 	mov cl, num
  
-	cmp cl, 00h 	;If num = 0
+	cmp cl, 00h 		;If num = 0
 	jz exit
  
 	mov [si], 00h
-	mov dl, sum 	;Add current value to sum
+	mov dl, sum 		;Add current value to sum
 	add dl, [si]
 	mov sum, dl
 	inc si
 	dec cl
 
-	cmp cl, 00h 	;Exit if count is over
+	cmp cl, 00h 		;Exit if count is over
 	jz exit
  
 	mov [si], 01h   	;Next number of the series
@@ -43,20 +43,20 @@ start:
 	dec cl
  
 loop1:
-	cmp cl, 00h 	;Exit if the count is over
+	cmp cl, 00h 		;Exit if the count is over
 	jz exit
  
 	add al, bl
-	xchg al, bl 	;Put the next number in BL
+	xchg al, bl 		;Put the next number in BL
  
 	mov [si], bl
-	mov dl, sum 	;Add the number to the sum
+	mov dl, sum 		;Add the number to the sum
 	add dl, [si]
-	mov sum, dl ;Put it back to the sum variable
+	mov sum, dl 		;Put it back to the sum variable
  
 	inc si
 	dec cl
-	jmp loop1   ;Continue with the next iteration
+	jmp loop1   		;Continue with the next iteration
 
 exit:
 	mov ah, 4ch
